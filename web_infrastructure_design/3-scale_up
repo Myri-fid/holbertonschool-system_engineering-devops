@@ -1,0 +1,22 @@
+![Distributed Web Infrastructure](images/diagramme3.png)
+
+
+Additional Server
+
+Improves capacity and reduces the load on individual servers.
+
+Helps distribute tasks efficiently and prevents slowdowns.
+
+Load Balancer (HAProxy) in Cluster
+
+Distributes traffic across multiple servers to prevent overload and ensure availability.
+
+Works in cluster mode with another load balancer for redundancy, avoiding a single point of failure.
+
+Split Components
+
+Web Server: Handles HTTP requests and serves pages to users.
+
+Application Server: Processes business logic and user requests.
+
+Database Server: Stores and manages website data, improving performance and security.
