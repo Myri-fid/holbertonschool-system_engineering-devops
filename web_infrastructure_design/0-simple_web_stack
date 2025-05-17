@@ -1,0 +1,27 @@
+<img src="diagramme.png" alt="diagramme">
+
+Web Infrastructure Basics:
+
+Server: A computer that hosts the website.
+
+Domain Name: The website's address (e.g., www.foobar.com).
+
+DNS Record for www: A record linking the domain name to the server's IP address.
+
+Web Server: Sends website pages to visitors (e.g., Nginx, Apache).
+
+Application Server: Runs the website's code and logic.
+
+Database: Stores site data (e.g., users, content).
+
+Communication with Users: The server uses HTTP/HTTPS to send web pages to a browser.
+
+
+
+Potential Issues:
+
+SPOF (Single Point of Failure): If the server crashes, the site goes down.
+
+Downtime for Maintenance: Restarting the server for updates makes the site temporarily unavailable.
+
+Scalability Problems: High traffic can overwhelm the server, slowing or crashing the site.
