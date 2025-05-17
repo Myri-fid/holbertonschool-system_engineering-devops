@@ -1,0 +1,31 @@
+![Distributed Web Infrastructure](images/diagramme1.png)
+
+Why do we add new elements?
+Load Balancer (HAProxy)
+
+Spreads traffic across multiple servers to prevent overload and improve availability.
+
+Two Servers
+
+Ensures redundancy so if one server fails, the other keeps the website running.
+
+Database Cluster (Primary-Replica)
+
+Improves security and speed by separating data writing and reading.
+
+How does the Load Balancer work?
+It distributes requests using different methods:
+
+Round-robin: Sends requests to each server one by one.
+
+Least connections: Sends requests to the server with the fewest active connections.
+
+Active-Active vs Active-Passive
+Active-Active: Both servers handle requests at the same time, making the system faster.
+
+Active-Passive: One server is active, and the other is on standby, ready to take over if needed.
+
+How does the database cluster work?
+Primary (Master): Handles writing and updates.
+
+Replica (Slave): Copies data from the Primary and handles reading requests.
