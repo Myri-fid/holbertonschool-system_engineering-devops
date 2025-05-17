@@ -1,0 +1,39 @@
+![Distributed Web Infrastructure](images/diagramme2.png)
+
+Why are these elements added?
+Firewalls
+
+Protect the system by filtering incoming and outgoing traffic.
+
+SSL Certificate (HTTPS)
+
+Encrypts communication between users and the server, ensuring secure data transfer.
+
+Monitoring Clients
+
+Collect performance data to detect issues early and optimize system health.
+
+Purpose of Each Element
+Firewalls prevent unauthorized access and block malicious traffic.
+
+HTTPS (SSL Certificate) ensures encrypted data transfer, protecting user information.
+
+Monitoring Tools collect system logs and analyze performance metrics.
+
+Tracking Web Server QPS (Queries Per Second) helps monitor request rates to prevent overload.
+
+Potential Issues
+SSL Termination at Load Balancer
+
+Exposing decrypted traffic internally can reduce security.
+
+Only One MySQL Write Server
+
+A single write database is a failure point, risking data loss.
+
+Identical Components on All Servers
+
+Limits resource optimization, leading to inefficiencies.
+
+Solutions
+Secure SSL at the web server level. Add MySQL replication to improve redundancy. Distribute roles for better scalability.
